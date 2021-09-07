@@ -793,6 +793,10 @@ namespace Sini
                         }
                     }
                 }
+                else if (fieldType == typeof(Dictionary<string,string>))
+                {
+                    value = ini.AsDictionary(key);
+                }
                 // not a primitive type?
                 else
                 {
